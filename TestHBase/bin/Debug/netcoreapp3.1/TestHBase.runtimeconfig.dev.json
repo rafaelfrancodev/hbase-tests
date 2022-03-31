@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\rafjs\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\rafjs\\.nuget\\packages"
+    ]
+  }
+}

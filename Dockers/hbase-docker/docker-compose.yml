@@ -1,0 +1,87 @@
+version: "3.3"
+
+services:
+  bigdata-zookeeper1:
+    container_name: bigdata-zookeeper1
+    image: zookeeper:3.4.12
+    hostname: bigdata-zookeeper1
+    environment:
+      ZOO_MY_ID: 1
+      ZOO_SERVERS: server.1=0.0.0.0:2888:3888 server.2=bigdata-zookeeper2:2888:3888 server.3=bigdata-zookeeper3:2888:3888
+
+  bigdata-zookeeper2:
+    container_name: bigdata-zookeeper2
+    image: zookeeper:3.4.12
+    hostname: bigdata-zookeeper2
+    environment:
+      ZOO_MY_ID: 2
+      ZOO_SERVERS: server.1=bigdata-zookeeper1:2888:3888 server.2=0.0.0.0:2888:3888 server.3=bigdata-zookeeper3:2888:3888
+
+  bigdata-zookeeper3:
+    container_name: bigdata-zookeeper3
+    image: zookeeper:3.4.12
+    hostname: bigdata-zookeeper3
+    environment:
+      ZOO_MY_ID: 3
+      ZOO_SERVERS: server.1=bigdata-zookeeper1:2888:3888 server.2=bigdata-zookeeper2:2888:3888 server.3=0.0.0.0:2888:3888
+
+  bigdata-hbase1:
+    container_name: bigdata-hbase1
+    image: yinfuyuan/hbase:2.0.0
+    hostname: bigdata-hbase1
+    links:
+      - bigdata-zookeeper1
+      - bigdata-zookeeper2
+      - bigdata-zookeeper3
+    ports:
+      - 16010:16010
+    environment:
+      HBASE_CLUSTER: "true"
+      HDFS_MASTER: "true"
+      HDFS_FS_DEFAULTFS: hdfs://bigdata-hbase1:9000
+      HDFS_SLAVES: bigdata-hbase2,bigdata-hbase3
+      HDFS_DFS_REPLICATION: 2
+      HBASE_ROOTDIR: hdfs://bigdata-hbase1:9000/hbase
+      HBASE_CLUSTER_DISTRIBUTED: "true"
+      HBASE_MASTER: "true"
+      HBASE_BACKUP_MASTER: bigdata-hbase2
+      HBASE_REGION_SERVERS: bigdata-hbase2,bigdata-hbase3
+      HBASE_ZOOKEEPER_QUORUM: bigdata-zookeeper1,bigdata-zookeeper2,bigdata-zookeeper3
+
+  bigdata-hbase2:
+    container_name: bigdata-hbase2
+    image: yinfuyuan/hbase:2.0.0
+    hostname: bigdata-hbase2
+    links:
+      - bigdata-zookeeper1
+      - bigdata-zookeeper2
+      - bigdata-zookeeper3
+    environment:
+      HBASE_CLUSTER: "true"
+      HDFS_FS_DEFAULTFS: hdfs://bigdata-hbase1:9000
+      HDFS_SLAVES: bigdata-hbase2,bigdata-hbase3
+      HDFS_DFS_REPLICATION: 2
+      HBASE_ROOTDIR: hdfs://bigdata-hbase1:9000/hbase
+      HBASE_CLUSTER_DISTRIBUTED: "true"
+      HBASE_BACKUP_MASTER: bigdata-hbase2
+      HBASE_REGION_SERVERS: bigdata-hbase2,bigdata-hbase3
+      HBASE_ZOOKEEPER_QUORUM: bigdata-zookeeper1,bigdata-zookeeper2,bigdata-zookeeper3
+
+  bigdata-hbase3:
+    container_name: bigdata-hbase3
+    image: yinfuyuan/hbase:2.0.0
+    hostname: bigdata-hbase3
+    links:
+      - bigdata-zookeeper1
+      - bigdata-zookeeper2
+      - bigdata-zookeeper3
+    environment:
+      HBASE_CLUSTER: "true"
+      HDFS_FS_DEFAULTFS: hdfs://bigdata-hbase1:9000
+      HDFS_SLAVES: bigdata-hbase2,bigdata-hbase3
+      HDFS_DFS_REPLICATION: 2
+      HBASE_ROOTDIR: hdfs://bigdata-hbase1:9000/hbase
+      HBASE_CLUSTER_DISTRIBUTED: "true"
+      HBASE_BACKUP_MASTER: bigdata-hbase2
+      HBASE_REGION_SERVERS: bigdata-hbase2,bigdata-hbase3
+      HBASE_ZOOKEEPER_QUORUM: bigdata-zookeeper1,bigdata-zookeeper2,bigdata-zookeeper3

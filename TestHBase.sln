@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32126.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestHBase", "TestHBase\TestHBase.csproj", "{600A9EE2-C37A-489F-BBEC-53FCBAD689FE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{600A9EE2-C37A-489F-BBEC-53FCBAD689FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{600A9EE2-C37A-489F-BBEC-53FCBAD689FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{600A9EE2-C37A-489F-BBEC-53FCBAD689FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{600A9EE2-C37A-489F-BBEC-53FCBAD689FE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F4FF094B-AE9A-4E85-99FC-84D555EFA35A}
+	EndGlobalSection
+EndGlobal

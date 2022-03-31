@@ -1,0 +1,30 @@
+[2022-03-31 19:41:41.840 GMT 	WARNING 	ClientCnxn 	Session 0x0 for server {127.0.0.1:16010}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: System.IO.IOException: Packet len1213486160 is out of range!
+   at org.apache.zookeeper.ClientCnxnSocket.readLength() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocket.cs:line 92
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doIO() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 60
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 288
+   at org.apache.zookeeper.ClientCnxn.startSendTask() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxn.cs:line 726
+[2022-03-31 19:41:43.364 GMT 	WARNING 	ClientCnxn 	Session 0x0 for server {127.0.0.1:16010}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: System.IO.IOException: Packet len1213486160 is out of range!
+   at org.apache.zookeeper.ClientCnxnSocket.readLength() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocket.cs:line 92
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doIO() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 60
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 288
+   at org.apache.zookeeper.ClientCnxn.startSendTask() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxn.cs:line 726
+[2022-03-31 19:41:45.444 GMT 	WARNING 	ClientCnxn 	Session 0x0 for server {127.0.0.1:16010}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: System.IO.IOException: Packet len1213486160 is out of range!
+   at org.apache.zookeeper.ClientCnxnSocket.readLength() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocket.cs:line 92
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doIO() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 60
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 288
+   at org.apache.zookeeper.ClientCnxn.startSendTask() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxn.cs:line 726
+[2022-03-31 19:41:47.379 GMT 	WARNING 	ClientCnxn 	Session 0x0 for server {127.0.0.1:16010}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: System.IO.IOException: Packet len1213486160 is out of range!
+   at org.apache.zookeeper.ClientCnxnSocket.readLength() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocket.cs:line 92
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doIO() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 60
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 288
+   at org.apache.zookeeper.ClientCnxn.startSendTask() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxn.cs:line 726
+[2022-03-31 19:41:49.017 GMT 	WARNING 	ClientCnxn 	Session 0x0 for server {127.0.0.1:16010}, unexpected error, closing socket connection and attempting reconnect] 	
+Exc level 0: System.IO.IOException: Packet len1213486160 is out of range!
+   at org.apache.zookeeper.ClientCnxnSocket.readLength() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocket.cs:line 92
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doIO() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 60
+   at org.apache.zookeeper.ClientCnxnSocketNIO.doTransport() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxnSocketNIO.cs:line 288
+   at org.apache.zookeeper.ClientCnxn.startSendTask() in D:\ZooKeeper\src\csharp\src\ZooKeeperNetEx\zookeeper\ClientCnxn.cs:line 726
