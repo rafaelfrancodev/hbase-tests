@@ -1,0 +1,225 @@
+{
+  "version": 3,
+  "targets": {
+    "net5.0": {
+      "EnterpriseLibrary.TransientFaultHandling/6.0.1304": {
+        "type": "package",
+        "compile": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {}
+        },
+        "runtime": {
+          "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll": {}
+        }
+      },
+      "Microsoft.HBase.Client/0.4.3": {
+        "type": "package",
+        "dependencies": {
+          "EnterpriseLibrary.TransientFaultHandling": "6.0.1304",
+          "protobuf-net": "2.0.0.668"
+        },
+        "compile": {
+          "lib/net45/Microsoft.HBase.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Microsoft.HBase.Client.dll": {}
+        }
+      },
+      "protobuf-net/2.0.0.668": {
+        "type": "package",
+        "compile": {
+          "lib/net40/protobuf-net.dll": {}
+        },
+        "runtime": {
+          "lib/net40/protobuf-net.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "EnterpriseLibrary.TransientFaultHandling/6.0.1304": {
+      "sha512": "sgRoEFLCYkifLnzAu8zsfnqmCmIFR4zyTxyi4oFD7GyGGaD4pHwuGlrgNeGIASrk4G81eWRjkoVHApeRaB50Ew==",
+      "type": "package",
+      "path": "enterpriselibrary.transientfaulthandling/6.0.1304",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Readme.txt",
+        "enterpriselibrary.transientfaulthandling.6.0.1304.nupkg.sha512",
+        "enterpriselibrary.transientfaulthandling.nuspec",
+        "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.dll",
+        "lib/portable-net45+win+wp8/Microsoft.Practices.EnterpriseLibrary.TransientFaultHandling.xml",
+        "tools/Utils.psm1",
+        "tools/install.ps1"
+      ]
+    },
+    "Microsoft.HBase.Client/0.4.3": {
+      "sha512": "xgdL+TVdWaewRrbwdcEVc/GuY2j8HeeTMSO3rqN3hxj6wTDMf5SPbloQWryRWUYzbDrX4ef2VQKHkQJWgsuJ8w==",
+      "type": "package",
+      "path": "microsoft.hbase.client/0.4.3",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Microsoft.HBase.Client.dll",
+        "microsoft.hbase.client.0.4.3.nupkg.sha512",
+        "microsoft.hbase.client.nuspec"
+      ]
+    },
+    "protobuf-net/2.0.0.668": {
+      "sha512": "Lgj+Kf1+RV0utKxX9u1WEcymPGrbWrj/AwFmFADFLLa/LLdc1ji2MIGcecFRAGUu6UO8BRbdjZAIYWvLlN1B/A==",
+      "type": "package",
+      "path": "protobuf-net/2.0.0.668",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net20-cf/protobuf-net.dll",
+        "lib/net20-cf/protobuf-net.pdb",
+        "lib/net20-cf/protobuf-net.xml",
+        "lib/net20/protobuf-net.dll",
+        "lib/net20/protobuf-net.pdb",
+        "lib/net20/protobuf-net.xml",
+        "lib/net30/protobuf-net.dll",
+        "lib/net30/protobuf-net.pdb",
+        "lib/net30/protobuf-net.xml",
+        "lib/net35-cf/protobuf-net.dll",
+        "lib/net35-cf/protobuf-net.pdb",
+        "lib/net35-cf/protobuf-net.xml",
+        "lib/net35/protobuf-net.dll",
+        "lib/net35/protobuf-net.pdb",
+        "lib/net35/protobuf-net.xml",
+        "lib/net40-cf/protobuf-net.dll",
+        "lib/net40-cf/protobuf-net.pdb",
+        "lib/net40-cf/protobuf-net.xml",
+        "lib/net40/protobuf-net.dll",
+        "lib/net40/protobuf-net.pdb",
+        "lib/net40/protobuf-net.xml",
+        "lib/netcore45/protobuf-net.XML",
+        "lib/netcore45/protobuf-net.dll",
+        "lib/netcore45/protobuf-net.pdb",
+        "lib/netcore45/protobuf-net.pri",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.dll",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.pdb",
+        "lib/portable-sl4+net40+wp7+windows8/protobuf-net.xml",
+        "lib/sl3-wp/protobuf-net.dll",
+        "lib/sl3-wp/protobuf-net.pdb",
+        "lib/sl3-wp/protobuf-net.xml",
+        "lib/sl4-windowsphone71/protobuf-net.dll",
+        "lib/sl4-windowsphone71/protobuf-net.pdb",
+        "lib/sl4-windowsphone71/protobuf-net.xml",
+        "lib/sl4/protobuf-net.dll",
+        "lib/sl4/protobuf-net.pdb",
+        "lib/sl4/protobuf-net.xml",
+        "lib/windowsphone8/protobuf-net.dll",
+        "lib/windowsphone8/protobuf-net.pdb",
+        "lib/windowsphone8/protobuf-net.xml",
+        "protobuf-net.2.0.0.668.nupkg.sha512",
+        "protobuf-net.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net5.0": [
+      "Microsoft.HBase.Client >= 0.4.3"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\leo_l\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\leo_l\\Joya\\repohbase\\hbase-tests\\libdotnet\\libdotnet.csproj",
+      "projectName": "libdotnet",
+      "projectPath": "C:\\Users\\leo_l\\Joya\\repohbase\\hbase-tests\\libdotnet\\libdotnet.csproj",
+      "packagesPath": "C:\\Users\\leo_l\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\leo_l\\Joya\\repohbase\\hbase-tests\\libdotnet\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\leo_l\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net5.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net5.0": {
+          "targetAlias": "net5.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net5.0": {
+        "targetAlias": "net5.0",
+        "dependencies": {
+          "Microsoft.HBase.Client": {
+            "target": "Package",
+            "version": "[0.4.3, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.21617.4\\RuntimeIdentifierGraph.json"
+      }
+    }
+  },
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EnterpriseLibrary.TransientFaultHandling 6.0.1304' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EnterpriseLibrary.TransientFaultHandling",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.HBase.Client 0.4.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.HBase.Client",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'protobuf-net 2.0.0.668' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "protobuf-net",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}

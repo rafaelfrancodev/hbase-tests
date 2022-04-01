@@ -1,0 +1,43 @@
+{
+  "version": 2,
+  "dgSpecHash": "bvqMts4Az8A825meOy8I04q9C2fN4ucEfpnpL9hc+zjylrGc8yOjchcyYDQ1vbRAHcLZq608aQ3Ce2dKiN14Ig==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\leo_l\\Joya\\repohbase\\hbase-tests\\libdotnet\\libdotnet.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\leo_l\\.nuget\\packages\\enterpriselibrary.transientfaulthandling\\6.0.1304\\enterpriselibrary.transientfaulthandling.6.0.1304.nupkg.sha512",
+    "C:\\Users\\leo_l\\.nuget\\packages\\microsoft.hbase.client\\0.4.3\\microsoft.hbase.client.0.4.3.nupkg.sha512",
+    "C:\\Users\\leo_l\\.nuget\\packages\\protobuf-net\\2.0.0.668\\protobuf-net.2.0.0.668.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'EnterpriseLibrary.TransientFaultHandling 6.0.1304' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "EnterpriseLibrary.TransientFaultHandling",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.HBase.Client 0.4.3' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Microsoft.HBase.Client",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    },
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'protobuf-net 2.0.0.668' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net5.0'. This package may not be fully compatible with your project.",
+      "libraryId": "protobuf-net",
+      "targetGraphs": [
+        "net5.0"
+      ]
+    }
+  ]
+}
